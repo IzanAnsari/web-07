@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="intern.css">
+    
+    <title>Internship project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #ffffff;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1)
+}
+
+#landing {
+    background: #fff;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+    background: url(intern2.webp);
+    background-position: center;
+    background-size: 300px 400px;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px solid #ee0000;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    background: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #1a54a5;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: 1px dotted #fff;
+    border-right: 1px dotted #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    text-align: left;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: red;
+}
+
+/*Screen Sizes 500px +*/
+
+@media(min-width: 31.25rem) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+/*Screen Sizes 700px +*/
+
+@media(min-width: 43.75rem) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <!--Landing Area-->
+        <div id="landing">
+            <div id="landing-text">
+                <div id="landing-text-inner">
+                    <h1>InternShip Website</h1>
+                    <h2>Click below to see Internship Certificate</h2>
+                    <a href="https://drive.google.com/file/d/1bCrvSRuZmR7N82cGS3RABiQ_CT_9zYo2/view?usp=sharing" class="btn" id="view-work">
+                        Click Here
+                    </a>
+                </div>
+            </div>
+            <div id="landing-image"></div>
+        </div>
+        <div id="images">
+            <div id="header">
+                <h2>My Work</h2>
+            </div>
+
+            <img src="signupI.png" alt="nature image">
+            <div class="caption">
+                <h3>Signup</h3>
+                <p>A User can register to login in application</p>
+            </div>
+            <img src="loginI.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Login</h3>
+                <p>Through here user can login in application </p>
+            </div>
+            <img src="homeI.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Dashboard</h3>
+                <p>In Dashboard there are multiple plant that we can buy</p>
+            </div>
+            <img src="missionI.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Mission</h3>
+                <p>This page shows the mission of our team regarding to the environment</p>
+            </div>
+            <img src="TeamI.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Team</h3>
+                <p>Here it will show the all member who have worked in this project</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Internship Experiences</h3>
+        <p>
+            During my internship at COMPSOFT TECHNOLOGIES Bangalore, 
+            I had the privilege of being part of a dynamic 4-member team that successfully developed the static website </br>"LEAF NOW." As the team leader,
+            I gained valuable experience in collaborating effectively and learned how to function seamlessly within a team.
+            The website</br></br> "LEAF NOW" is an e-commerce platform dedicated to promoting environmental awareness. 
+        </br></br>
+            Users can easily register and log in to the website, where they can engage in buying and selling various plants. Through this project, 
+    
+            I honed my skills in web development </br></br>and gained a deeper understanding of designing for a cause that aligns with environmental consciousness.
+            
+            I am excited to add this project to my portfolio as it exemplifies</br></br> my ability to work collaboratively, 
+        
+            lead a team, and contribute to a meaningful cause through technology.
+            </p>
+    </footer>
+
+</body>
+ 
+</html>

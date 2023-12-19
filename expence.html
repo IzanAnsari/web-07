@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="expence.css">
+    <title>Expence Tracker project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #ffffff;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1)
+}
+
+#landing {
+    background: #fff;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+    background: url(signupE.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px solid #020202;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    background: #000000;
+    color: #fffefe;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #19c117;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: 1px dotted #fff;
+    border-right: 1px dotted #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    text-align: left;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: red;
+}
+
+/*Screen Sizes 500px +*/
+
+@media(min-width: 31.25rem) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+/*Screen Sizes 700px +*/
+
+@media(min-width: 43.75rem) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <!--Landing Area-->
+        <div id="landing">
+            <div id="landing-text">
+                <div id="landing-text-inner">
+                    <h1>Expence Tracker  Website</h1>
+                    <h2>Click below to see the Website</h2>
+                    <a href="https://expense-nirs.onrender.com" class="btn" id="view-work">
+                        Click Here
+                    </a>
+                </div>
+            </div>
+            <div id="landing-image"></div>
+        </div>
+        <div id="images">
+            <div id="header">
+                <h2>My Work</h2>
+            </div>
+
+            <img src="frontE.png" alt="nature image">
+            <div class="caption">
+                <h3>Front Page</h3>
+                <p>First Page while entering into the Project. It show two button if you are not user you can register through register button and login button for already user</p>
+            </div>
+            <img src="loginE.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Login</h3>
+                <p>Through here you can login the page and goto the dashboard </p>
+            </div>
+            <img src="homeE.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Dashboard</h3>
+                <p>In Dashboard you can you can Add your Expence Also Delete the Expence and download the report also buy the member ship </p>
+            </div>
+            <img src="errorE.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Error</h3>
+                <p>The error page if enter wrong password in login it will through to error page</p>
+            </div>
+            <img src="razor.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Razor Pay page</h3>
+                <p>Through here you can buy the membership of the website and be move to the membership page.</p>
+            </div>
+            <img src="leaderE.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Membership Page</h3>
+                <p>Here you can add you expence and also can see every user data with download expence option.</p>
+            </div><img src="contactE.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>contact us</h3>
+                <p>you can share any problem related to the Website or ask the question related to the website</p>
+            </div>
+            <img src="forgotE.png
+            " alt="nature image">
+            <div class="caption">
+                <h3>Forgot Password</h3>
+                <p>If you forgot the password through this you can easily reset your password</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <h3>Manage your Daily Expences</h3>
+        <p>
+            I developed an expense tracker application that offers users a seamless experience for managing their expenses.
+            Leveraging Express.js, Node.js, EJS, CSS, and JavaScript, I ensured a smooth and user-friendly interface. The data is
+            stored efficiently using MongoDB, and for deployment, I chose AWS, Nginx, Git, and GitHub to maintain a robust and
+            scalable platform.
+        </p>
+            <p>
+        
+            The app's core functionality centers around user registration and login, allowing each user to have a personalized
+            experience. Upon logging in, users are presented with a well-designed home page, showcasing their expenses with
+            proper pagination for easy navigation. Adding and deleting expenses is straightforward, and users can view their
+            total expenses, aiding them in maintaining financial awareness.
+        </p>
+        
+            <p>
+            To enhance the app's appeal and functionality, I included additional pages for 'About' and 'Contact Us,' enabling
+            users to provide valuable feedback and inquiries. A logout button is also available, allowing users to securely exit
+            the application.
+        </p>
+        
+        <p>
+            For those seeking advanced features like accessing the leaderboard and downloading expense reports, I introduced a
+            Pro membership option. Users can purchase this membership seamlessly through Razorpay, offering excellent value at a
+            cost of only 299.
+        </p>
+        
+        <p>
+            Security is of utmost importance, and I ensured that by implementing a password reset mechanism. When a user clicks
+            the 'Reset Password' button, they receive an email with instructions on resetting their password, bolstering account
+            protection.
+        </p>
+        
+        <p>
+            To maximize the app's performance, I utilized Nginx as a reverse proxy server, handling client requests efficiently.
+            Finally, I deployed the app on AWS EC2, S3, and Elastic IP, ensuring a highly available and reliable application
+            accessible to users anytime, anywhere.
+        </p>
+        
+        <p>
+            Overall, this project showcases my expertise in full-stack web development, backend setup, database management,
+            deployment, and payment integration. The app's seamless user experience and professional-grade features.
+           
+        </p>
+        <h4>Note:- I have worked on several Projects but here I mentioned the major and Live Projects only!</h4>
+    </footer>
+
+</body>
+ 
+</html>
