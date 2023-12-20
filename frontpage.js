@@ -45,3 +45,25 @@ function erase() {
 setTimeout(type, 500);
 
 
+ // JavaScript to trigger the fade-up effect when the section comes into view
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section");
+        const options = {
+            root: null,
+            rootMargin: "12px",
+            threshold: 0.2,
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-up");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+    });
