@@ -336,13 +336,13 @@
 
         .services .serv-content .card {
             width: calc(50% - 20px);
-            background: #222;
             text-align: center;
             border-radius: 6px;
             padding: 50px 25px;
             cursor: pointer;
             transition: all 0.3s ease;
             margin-bottom: 35px;
+
         }
 
         .services .serv-content .card:hover {
@@ -816,7 +816,7 @@
 
             .services .serv-content .card {
                 width: calc(50% - 10px);
-                margin-bottom: 20px;
+                /* margin-bottom: 40px; */
             }
 
             .skills .skills-content .column,
@@ -845,6 +845,7 @@
 
             .services .serv-content .card {
                 width: 100%;
+                /* margin-bottom: 40px; */
             }
         }
 
@@ -871,6 +872,7 @@
                 margin: 0;
             }
 
+
             .right form .error-box {
                 width: 150px;
             }
@@ -884,6 +886,7 @@
                 line-height: 38px;
             }
         }
+
 
         .email-button {
             display: inline-block;
@@ -951,6 +954,9 @@
             background-color: #bf5b5b;
         }
 
+
+
+        /* transition effect */
         .glow-on-hover {
             /* width: 220px;
     height: 50px; */
@@ -1020,124 +1026,167 @@
                 background-position: 0 0;
             }
         }
+
         @keyframes progress1 {
-  0% {
-    transform: scalex(0);
-    opacity: .5;
-  }
-  90% {
-    transform: scalex(1);
-    opacity: 1;
-  }
-  92% {
-    transform: scalex(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scalex(1);
-    opacity: 0;
-  }
-}
+            0% {
+                transform: scalex(0);
+                opacity: .5;
+            }
 
-@keyframes progress2 {
-  0% {
-    transform: scale(.3,.8) translatez(0);
-    opacity: 0;
-  }
-  90% {
-    transform: scale(1,1) translatex(300px) translatez(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1,1) translatex(300px) translatez(0);
-    opacity: 0;
-  }
-}
+            90% {
+                transform: scalex(1);
+                opacity: 1;
+            }
 
-.line {
-  /* position: absolute; */
-  /* top: 50%;
+            92% {
+                transform: scalex(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scalex(1);
+                opacity: 0;
+            }
+        }
+
+        @keyframes progress2 {
+            0% {
+                transform: scale(.3, .8) translatez(0);
+                opacity: 0;
+            }
+
+            90% {
+                transform: scale(1, 1) translatex(300px) translatez(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1, 1) translatex(300px) translatez(0);
+                opacity: 0;
+            }
+        }
+
+
+
+        .line {
+            /* position: absolute; */
+            /* top: 50%;
   width: 300px;
   left: 50%; */
-  /* margin-left: -150px; */
-  height: 3px;
-  background: rgba(255,255,255,.1);
-  
-  &:before {
-    animation: progress1 15s infinite;
-    transform-origin: 0 0;
-    content: "";
-    display: block;
-    width: 300px;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0.4) 80%, rgba(255,255,255,1));
-  }
-  
-  &:after {
-    content: "";
-    position: absolute;
-    /* animation: progress2 4s infinite; */
-    transform-origin: 90% 50%;
-    margin-left: -24px;
-    top: -9px;
-    width: 30px;
-    height: 21px;
-    border-radius: 2px;
-    /* background: rgba(210,189,255,.55); */
-    /* filter: blur(8px); */
-    /* box-shadow: 0 0 10px 6px rgba(210,189,255,.4),
+            /* margin-left: -150px; */
+            height: 3px;
+            background: rgba(255, 255, 255, .1);
+
+            &:before {
+                animation: progress1 15s infinite;
+                transform-origin: 0 0;
+                content: "";
+                display: block;
+                width: 300px;
+                height: 100%;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.4) 80%, rgba(255, 255, 255, 1));
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                /* animation: progress2 4s infinite; */
+                transform-origin: 90% 50%;
+                margin-left: -24px;
+                top: -9px;
+                width: 30px;
+                height: 21px;
+                border-radius: 2px;
+                /* background: rgba(210,189,255,.55); */
+                /* filter: blur(8px); */
+                /* box-shadow: 0 0 10px 6px rgba(210,189,255,.4),
                 -20px 0 15px 4px rgba(210,189,255,.3),
                 -40px 0 15px 2px rgba(210,189,255,.2),
                 -60px 0 10px 1px rgba(210,189,255,.1),
                 -80px 0 10px 1px rgba(210,189,255,.05); */
-  }
-}
-.email-button, .b{
-  /* background: hsl(0, 0%, 100%); */
-  padding: 16px 24px;
-  position: relative;
-  border-radius: 8px;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+            }
+        }
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 15px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    transform: scale(0.9) translateZ(0);
-    filter: blur(15px);
-    background: linear-gradient(
-      to left,
-      #ff5770,
-      #e4428d,
-      #c42da8,
-      #9e16c3,
-      #6501de,
-      #9e16c3,
-      #c42da8,
-      #e4428d,
-      #ff5770
-    );
-    background-size: 200% 200%;
-    animation: animateGlow 1.25s linear infinite;
-  }
-}
+        .email-button,
+        .b {
+            /* background: hsl(0, 0%, 100%); */
+            padding: 16px 24px;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
 
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
-}
+            &::after {
+                position: absolute;
+                content: "";
+                top: 15px;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                height: 100%;
+                width: 100%;
+                transform: scale(0.9) translateZ(0);
+                filter: blur(15px);
+                background: linear-gradient(to left,
+                        #ff5770,
+                        #e4428d,
+                        #c42da8,
+                        #9e16c3,
+                        #6501de,
+                        #9e16c3,
+                        #c42da8,
+                        #e4428d,
+                        #ff5770);
+                background-size: 200% 200%;
+                animation: animateGlow 1.25s linear infinite;
+            }
+        }
 
+        @keyframes animateGlow {
+            0% {
+                background-position: 0% 50%;
+            }
 
+            100% {
+                background-position: 200% 50%;
+            }
+        }
 
+        .flip-card-inner {
+            /* position: relative; */
+            /* width: 100%;
+  height: 100%; */
+            /* text-align: center; */
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-card-front,
+        .flip-card-back {
+            /* position: absolute; */
+            /* width: 100%;
+            height: 100%; */
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-card-front {
+            /* background-color: #bbb; */
+            /* color: rgb(231, 36, 36); */
+        }
+
+        /* Style the back side */
+        .flip-card-back {
+            background-color: dodgerblue;
+            /* color: rgb(216, 9, 9); */
+            transform: rotateY(180deg);
+        }
     </style>
 
 </head>
@@ -1209,17 +1258,24 @@
                             a user can login, signup , add and Delete expenses and also can able download the reports of
                             expenses.</p></br>
                         <a class="email-button" href="expence.html">Click here for website</a>
-
-
                     </div>
                 </div>
-                <div class="card glow-on-hover">
-                    <div class="box">
-                        <i class="fas fa-comment"></i>
-                        <div class="text">Group Chat App </div>
-                        <p>Application where users can login and send and receive messages.
-                            User can create multiple group chat among his <br>users.
-                        </p></br><a class="email-button" href="chat.html">Click here for website</a>
+                <div class="card glow-on-hover flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="box">
+                                <i class="fas fa-comment"></i>
+                                <div class="text">Group Chat App </div>
+                                <p>Application where users can login and send and receive messages.
+                                    User can create multiple group chat among his <br>users.
+                                </p></br><a class="email-button" href="chat.html">Click here for website</a>
+                                </div>
+                            </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                        </div>
                     </div>
                 </div>
                 <div class="card glow-on-hover">
@@ -1238,7 +1294,8 @@
                         <i class="fa solid fa-laptop"></i>
                         <div class="text">Mini Project</div>
                         <p>Build many mini project which I have mention in card using DOM-Document Object Model.
-                            <br>Many more</p></br>
+                            <br>Many more
+                        </p></br>
                         <a class="email-button" href="intern.html">Click here for website</a>
                     </div>
                 </div>
@@ -1262,7 +1319,7 @@
                             highlighted in the projects section. I am currently in search of a full-time opportunity
                             where I can leverage my programming skills to contribute effectively.</h6>
                     </div>
-                    <a class="b" href="https://github.com/IzanAnsari  ">Read more</a>    
+                    <a class="b" href="https://github.com/IzanAnsari  ">Read more</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
