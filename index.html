@@ -1151,42 +1151,45 @@
             }
         }
 
-        .flip-card-inner {
-            /* position: relative; */
-            /* width: 100%;
-  height: 100%; */
-            /* text-align: center; */
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-        }
+         .flip-card-inner {
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
 
-        /* Do an horizontal flip when you move the mouse over the flip box container */
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
 
-        /* Position the front and back side */
-        .flip-card-front,
-        .flip-card-back {
-            /* position: absolute; */
-            /* width: 100%;
-            height: 100%; */
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
+    /* Position the front and back side */
+    .flip-card-front,
+    .flip-card-back {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
 
-        /* Style the front side (fallback if image is missing) */
-        .flip-card-front {
-            /* background-color: #bbb; */
-            /* color: rgb(231, 36, 36); */
-        }
 
-        /* Style the back side */
-        .flip-card-back {
-            background-color: dodgerblue;
-            /* color: rgb(216, 9, 9); */
-            transform: rotateY(180deg);
-        }
+    .flip-card-front {
+      transform: rotateY(0deg);
+      /* Adjusted here */
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+      background-color: dodgerblue;
+      color: rgb(216, 9, 9);
+      transform: rotateY(180deg);
+      ;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     </style>
 
 </head>
@@ -1250,16 +1253,28 @@
         <div class="max-width">
             <h2 class="title">My Project</h2>
             <div class="serv-content">
-                <div class="card glow-on-hover">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Expence Tracker</div>
-                        <p>Created an expense tracker where
-                            a user can login, signup , add and Delete expenses and also can able download the reports of
-                            expenses.</p></br>
-                        <a class="email-button" href="expence.html">Click here for website</a>
+                <div class="card glow-on-hover flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="box">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="text">Expense Tracker</div>
+                                <p>Created an expense tracker where
+                                    a user can login, signup, add and delete expenses, and also download <br>expense reports.</p><br>
+                                <a class="email-button" href="expence.html">Click here for website</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="box">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
+                
                 <div class="card glow-on-hover flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -1269,36 +1284,61 @@
                                 <p>Application where users can login and send and receive messages.
                                     User can create multiple group chat among his <br>users.
                                 </p></br><a class="email-button" href="chat.html">Click here for website</a>
-                                </div>
                             </div>
+                        </div>
                         <div class="flip-card-back">
+                            <div class="box">
                             <h1>John Doe</h1>
                             <p>Architect & Engineer</p>
                             <p>We love that guy</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card glow-on-hover">
-                    <div class="box">
-                        <i class="fa solid fa-graduation-cap"></i>
-                        <div class="text">Internship Project</div>
-                        <p>Web developer as an intern in
-                            COMPSOFT technology.
-                            Work as Intern for one month
-                            In COMPSOFT <br>technology </p></br>
-                        <a class="email-button" href="intern.html">Click here for website</a>
+                <div class="card glow-on-hover flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="box">
+                                <i class="fa solid fa-graduation-cap"></i>
+                                <div class="text">Internship Project</div>
+                                <p>Web developer as an intern in
+                                    COMPSOFT technology.
+                                    Work as Intern for one month
+                                    In COMPSOFT <br>technology </p><br>
+                                <a class="email-button" href="intern.html">Click here for website</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="box">
+                                <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                            <p>We love that guy</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card glow-on-hover">
-                    <div class="box">
-                        <i class="fa solid fa-laptop"></i>
-                        <div class="text">Mini Project</div>
-                        <p>Build many mini project which I have mention in card using DOM-Document Object Model.
-                            <br>Many more
-                        </p></br>
-                        <a class="email-button" href="intern.html">Click here for website</a>
+                
+                <div class="card glow-on-hover flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="box">
+                                <i class="fa solid fa-laptop"></i>
+                                <div class="text">Mini Project</div>
+                                <p>Build many mini projects using the DOM (Document Object Model).
+                                    <br>Explore various concepts <br>and techniques.</p><br>
+                                <a class="email-button" href="intern.html">Click here for website</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="box">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
         </div>

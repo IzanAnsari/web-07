@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" flip-card-inner="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+       @import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+body {
+  background: #eee;
+  font-family: 'Lily Script One';
+}
+
+.flip-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  /* line-height: 300px; */
+  color: #03446A;
+  text-align: center;
+  /* font-size: 60px; */
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+}
+    </style>
+</head>
+<body>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fas fa-comment"></i>
+            <div class="box">
+              <div class="text">Group Chat App </div>
+              <p>Application where users can login and send and receive messages.
+                User can create multiple group chat among his <br>users.
+              </p></br><a class="email-button" href="chat.html">Click here for website</a>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
