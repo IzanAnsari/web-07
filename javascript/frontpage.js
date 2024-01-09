@@ -67,3 +67,18 @@ setTimeout(type, 500);
             observer.observe(section);
         });
     });
+    
+
+ 
+        ScrollReveal({
+            // reset: true,
+            distance: '1000px',
+            duration: 3000,
+            delay: 500
+        });
+
+        ScrollReveal().reveal('.title, .menu, .card-02, h5, .T-01', { origin: 'top' });
+        ScrollReveal().reveal('.Hire, .card-03, footer', { origin: 'bottom' });
+        ScrollReveal().reveal('.maintext, .text-2, img, .text-01, .card-01, .row, .cen', { origin: 'left' });
+        ScrollReveal().reveal('.bars, .text-1, .text-3, p, .b, .card-04', { origin: 'right' });
+   

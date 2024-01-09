@@ -9,6 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -190,7 +192,7 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("../images/izaan 0.3.jpg") no-repeat center;
+    background: url("../images/izaan\ 0.3.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -208,27 +210,27 @@ section .title::after {
     margin-right: 0;
 }
 
-.home .home-content .text-1 {
+.home .izzu .text-1 {
     font-size: 27px;
 }
 
-.home .home-content .text-2 {
+.home .izzu .text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 
-.home .home-content .text-3 {
+.home .izzu .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
 
-.home .home-content .text-3 span {
+.home .izzu .text-3 span {
     color: crimson;
     font-weight: 500;
 }
 
-.home .home-content a {
+.home .izzu a {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -241,7 +243,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.home .home-content a:hover {
+.home .izzu a:hover {
     color: crimson;
     background: none;
 }
@@ -768,15 +770,15 @@ footer span a:hover {
         font-size: 25px;
     }
 
-    .home .home-content .text-2 {
+    .home .izzu .text-2 {
         font-size: 70px;
     }
 
-    .home .home-content .text-3 {
+    .home .izzu .text-3 {
         font-size: 35px;
     }
 
-    .home .home-content a {
+    .home .izzu a {
         font-size: 23px;
         padding: 10px 30px;
     }
@@ -816,15 +818,15 @@ footer span a:hover {
         padding: 0 23px;
     }
 
-    .home .home-content .text-2 {
+    .home .izzu .text-2 {
         font-size: 60px;
     }
 
-    .home .home-content .text-3 {
+    .home .izzu .text-3 {
         font-size: 32px;
     }
 
-    .home .home-content a {
+    .home .izzu a {
         font-size: 20px;
     }
 
@@ -835,11 +837,11 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2 {
+    .home .izzu .text-2 {
         font-size: 50px;
     }
 
-    .home .home-content .text-3 {
+    .home .izzu .text-3 {
         font-size: 27px;
     }
 
@@ -1185,3 +1187,7 @@ font-size: 20px;
     color: #c7a115;
 }
   
+.text-2{
+    text-shadow: 0 0 20px red,0 0 40px crimson;
+}
+
