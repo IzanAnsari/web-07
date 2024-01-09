@@ -78,7 +78,7 @@ setTimeout(type, 500);
         });
 
         ScrollReveal().reveal('.title, .menu, .card-01, h5, .T-01', { origin: 'top' });
-        ScrollReveal().reveal('.Hire, .card-04, footer', { origin: 'bottom' });
+        ScrollReveal().reveal('.Hire, .card-06, footer', { origin: 'bottom' });
         ScrollReveal().reveal('.maintext, .text-2, img, .text-02, .card-01, .row, .cen', { origin: 'left' });
-        ScrollReveal().reveal('.bars, .text-1, .text-3, p, .b, .card-03', { origin: 'right' });
+        ScrollReveal().reveal('.bars, .text-1, .text-3, p, .b, .card-05', { origin: 'right' });
    
