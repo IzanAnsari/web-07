@@ -72,13 +72,13 @@ setTimeout(type, 500);
  
         ScrollReveal({
             // reset: true,
-            distance: '1000px',
-            duration: 3000,
+            distance: '20px',
+            duration: 1500,
             delay: 500
         });
 
-        ScrollReveal().reveal('.title, .menu, .card-02, h5, .T-01', { origin: 'top' });
-        ScrollReveal().reveal('.Hire, .card-03, footer', { origin: 'bottom' });
-        ScrollReveal().reveal('.maintext, .text-2, img, .text-01, .card-01, .row, .cen', { origin: 'left' });
-        ScrollReveal().reveal('.bars, .text-1, .text-3, p, .b, .card-04', { origin: 'right' });
+        ScrollReveal().reveal('.title, .menu, .card-01, h5, .T-01', { origin: 'top' });
+        ScrollReveal().reveal('.Hire, .card-04, footer', { origin: 'bottom' });
+        ScrollReveal().reveal('.maintext, .text-2, img, .text-02, .card-01, .row, .cen', { origin: 'left' });
+        ScrollReveal().reveal('.bars, .text-1, .text-3, p, .b, .card-03', { origin: 'right' });
    
